@@ -1,0 +1,60 @@
+[
+  {
+    "id": "ls",
+    "name": "ls",
+    "category": "Basic",
+    "shortDesc": "List directory contents",
+    "longDesc": "The ls command lists files and directories within the file system. By default, it excludes hidden files and prints only the names. Flags can reveal permissions, sizes, and hidden items.",
+    "syntax": "ls [OPTION]... [DIRECTORY]",
+    "flags": [
+      { "flag": "-l", "description": "Use a long listing format showing permissions, owner, and size" },
+      { "flag": "-a", "description": "Do not ignore entries starting with . (hidden files)" }
+    ],
+    "examples": [
+      { "cmd": "ls", "description": "List visible files in current directory" },
+      { "cmd": "ls -la", "description": "List all files (including hidden) in detailed format" }
+    ],
+    "isSimulated": true
+  },
+  {
+    "id": "cd",
+    "name": "cd",
+    "category": "Basic",
+    "shortDesc": "Change the shell working directory",
+    "longDesc": "The cd command changes the current working directory in your terminal session.",
+    "syntax": "cd [DIRECTORY]",
+    "flags": [],
+    "examples": [
+      { "cmd": "cd documents", "description": "Move into the 'documents' directory" },
+      { "cmd": "cd ..", "description": "Move up one directory level" },
+      { "cmd": "cd ~", "description": "Return to the home directory" }
+    ],
+    "isSimulated": true
+  },
+  {
+    "id": "pwd",
+    "name": "pwd",
+    "category": "Basic",
+    "shortDesc": "Print name of current/working directory",
+    "longDesc": "Displays the full absolute path to the current working directory.",
+    "syntax": "pwd",
+    "flags": [],
+    "examples": [
+      { "cmd": "pwd", "description": "Show the current directory path" }
+    ],
+    "isSimulated": true
+  },
+  {
+    "id": "clear",
+    "name": "clear",
+    "category": "Basic",
+    "shortDesc": "Clear the terminal screen",
+    "longDesc": "Clears your screen if this is possible, including its scrollback buffer.",
+    "syntax": "clear",
+    "flags": [],
+    "examples": [
+      { "cmd": "clear", "description": "Clears all previous terminal output" }
+    ],
+    "isSimulated": true
+  }
+]

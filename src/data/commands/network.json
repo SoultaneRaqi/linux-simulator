@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ping",
+    "name": "ping",
+    "category": "Networking",
+    "shortDesc": "Send ICMP ECHO_REQUEST to network hosts",
+    "longDesc": "Uses the ICMP protocol's mandatory ECHO_REQUEST datagram to elicit an ICMP ECHO_RESPONSE from a host or gateway.",
+    "syntax": "ping [OPTION]... HOST",
+    "flags": [
+      { "flag": "-c", "description": "Stop after sending specific count of ECHO_REQUEST packets" }
+    ],
+    "examples": [
+      { "cmd": "ping -c 4 google.com", "description": "Sends 4 ping requests to google.com" }
+    ],
+    "isSimulated": false
+  },
+  {
+    "id": "ip",
+    "name": "ip",
+    "category": "Networking",
+    "shortDesc": "Show / manipulate routing, network devices, interfaces and tunnels",
+    "longDesc": "The modern replacement for ifconfig. Used to configure network interfaces and view routing tables.",
+    "syntax": "ip [ OPTIONS ] OBJECT { COMMAND | help }",
+    "flags": [
+      { "flag": "-c", "description": "Use color output" }
+    ],
+    "examples": [
+      { "cmd": "ip a", "description": "Show IP addresses assigned to all network interfaces" }
+    ],
+    "isSimulated": false
+  }
+]

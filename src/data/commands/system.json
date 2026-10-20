@@ -1,0 +1,47 @@
+[
+  {
+    "id": "echo",
+    "name": "echo",
+    "category": "System",
+    "shortDesc": "Display a line of text",
+    "longDesc": "Prints text or variables to the terminal output. Highly useful in scripting.",
+    "syntax": "echo [SHORT-OPTION]... [STRING]...",
+    "flags": [
+      { "flag": "-n", "description": "Do not output the trailing newline" }
+    ],
+    "examples": [
+      { "cmd": "echo 'Hello World'", "description": "Prints Hello World to the terminal" }
+    ],
+    "isSimulated": true
+  },
+  {
+    "id": "date",
+    "name": "date",
+    "category": "System",
+    "shortDesc": "Print or set the system date and time",
+    "longDesc": "Displays the current time in the given format.",
+    "syntax": "date [OPTION]... [+FORMAT]",
+    "flags": [
+      { "flag": "-u", "description": "Print or set Coordinated Universal Time (UTC)" }
+    ],
+    "examples": [
+      { "cmd": "date", "description": "Prints the current date and time" }
+    ],
+    "isSimulated": true
+  },
+  {
+    "id": "top",
+    "name": "top",
+    "category": "Process",
+    "shortDesc": "Display Linux processes",
+    "longDesc": "Provides a dynamic real-time view of a running system. It can display system summary information as well as a list of processes or threads currently being managed by the Linux kernel.",
+    "syntax": "top [OPTION]",
+    "flags": [
+      { "flag": "-u", "description": "Monitor by user" }
+    ],
+    "examples": [
+      { "cmd": "top", "description": "Opens the interactive process viewer" }
+    ],
+    "isSimulated": false
+  }
+]

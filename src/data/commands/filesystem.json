@@ -1,0 +1,45 @@
+[
+  {
+    "id": "mkdir",
+    "name": "mkdir",
+    "category": "File System",
+    "shortDesc": "Make directories",
+    "longDesc": "Create the DIRECTORY(ies), if they do not already exist.",
+    "syntax": "mkdir [OPTION]... DIRECTORY...",
+    "flags": [
+      { "flag": "-p", "description": "Create parent directories as needed, no error if existing" }
+    ],
+    "examples": [
+      { "cmd": "mkdir new_folder", "description": "Creates a directory named new_folder" }
+    ],
+    "isSimulated": true
+  },
+  {
+    "id": "touch",
+    "name": "touch",
+    "category": "File System",
+    "shortDesc": "Change file timestamps / Create empty files",
+    "longDesc": "Update the access and modification times of each FILE to the current time. A FILE argument that does not exist is created empty.",
+    "syntax": "touch [OPTION]... FILE...",
+    "flags": [],
+    "examples": [
+      { "cmd": "touch config.txt", "description": "Creates an empty file named config.txt" }
+    ],
+    "isSimulated": true
+  },
+  {
+    "id": "cat",
+    "name": "cat",
+    "category": "File System",
+    "shortDesc": "Concatenate files and print on the standard output",
+    "longDesc": "Reads data from files and outputs their contents. Often used to quickly view the contents of short text files.",
+    "syntax": "cat [OPTION]... [FILE]...",
+    "flags": [
+      { "flag": "-n", "description": "Number all output lines" }
+    ],
+    "examples": [
+      { "cmd": "cat notes.txt", "description": "Displays the contents of notes.txt" }
+    ],
+    "isSimulated": true
+  }
+]
