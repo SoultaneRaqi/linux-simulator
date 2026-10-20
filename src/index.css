@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Define your custom theme variables directly in CSS for v4 */
+@theme {
+  --font-mono: "Fira Code", "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+
+  --color-linux-bg: #0f172a;
+  --color-linux-panel: #1e293b;
+  --color-linux-accent: #38bdf8;
+  --color-linux-text: #f8fafc;
+}
+
+body {
+  background-color: var(--color-linux-bg);
+  color: var(--color-linux-text);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+}
